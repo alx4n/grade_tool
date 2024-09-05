@@ -3,11 +3,11 @@ import 'package:grade_tool/grade_tool.dart';
 
 void main() {
   final data = {
-    56.4: "F",
-    67.5: "D",
-    79.9: "C",
-    80.0: "B",
-    94.2: "A",
+    56.4: LetterGrade.F,
+    67.5: LetterGrade.D,
+    79.9: LetterGrade.C,
+    80.0: LetterGrade.B,
+    94.2: LetterGrade.A,
   };
 
   final gradeTool = GradeTool();

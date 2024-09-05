@@ -1,15 +1,17 @@
+enum LetterGrade { A, B, C, D, F }
+
 class GradeTool {
-  String assignLetterGrade(double numericGrade) {
+  LetterGrade assignLetterGrade(double numericGrade) {
     if (numericGrade < 60.0) {
-      return "F";
+      return LetterGrade.F;
     } else if (numericGrade < 70.0) {
-      return "D";
+      return LetterGrade.D;
     } else if (numericGrade < 80.0) {
-      return "C";
+      return LetterGrade.C;
     } else if (numericGrade < 90.0) {
-      return "B";
+      return LetterGrade.B;
     } else {
-      return "A";
+      return LetterGrade.A;
     }
   }
 }
