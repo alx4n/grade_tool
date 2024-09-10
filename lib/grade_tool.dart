@@ -1,14 +1,5 @@
 enum LetterGrade { A, B, C, D, F }
 
-/*class NumberGRade {
-  final double value;
-  NumberGrade(this.value) {
-    if (value < 0 || value > 1) {
-      throw Exception('Value outside bounds.');
-    }
-  }
-}*/
-
 class GradeTool {
   LetterGrade assignLetterGrade(double numericGrade) {
     if (numericGrade < 0.6) {
@@ -22,5 +13,10 @@ class GradeTool {
     } else {
       return LetterGrade.A;
     }
+  }
+
+  double percentToDouble(double percentGrade) {
+    double numGrade = percentGrade / 100;
+    return numGrade;
   }
 }
