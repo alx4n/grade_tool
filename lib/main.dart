@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Grade Tool',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
         useMaterial3: true,
       ),
-      home: Scaffold(body: GradeToolWidget()),
+      home: const Scaffold(body: GradeToolWidget()),
     );
   }
 }
@@ -31,7 +31,7 @@ class GradeToolWidget extends StatefulWidget {
 
 class _GradeToolWidgetState extends State<GradeToolWidget> {
   final TextEditingController _controller = TextEditingController();
-  String _letterGrade = 'Hello';
+  String _letterGrade = '';
 
   @override
   Widget build(BuildContext context) {
